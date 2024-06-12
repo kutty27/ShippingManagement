@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                // Checkout the code from Git repository
-                git url: 'https://github.com/kutty27/ShippingManagement.git', branch: 'main'
-            }
-        }
         stage('Compile') {
             steps {
                 // Compile the Java code
